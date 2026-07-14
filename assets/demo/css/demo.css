@@ -1,0 +1,142 @@
+/** stylechooser **/
+
+#stylechooser { font-family: "ClassicRoundMedium", sans-serif; position: fixed; top: 13%; left: -1px; width: 321px; min-height: 300px; z-index: 99999; padding: 0 0 15px 0; }
+#stylechooser #styleToggle {
+    position: absolute;
+    top: 30px;
+    right: -47px;
+    cursor: pointer;
+    font-size: 0;
+    color: transparent;
+    width: 47px;
+    height: 50px;
+    margin: 0;
+    background: #F5F5F5 url(../images/truck-ico.png) no-repeat center 15px;
+    border: 1px solid #d8d8d8;
+    border-left: 0;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+}
+
+#stylechooser .easyBox {
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    border: 1px solid #d8d8d8;
+    -webkit-border-top-right-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    -moz-border-radius-topright: 15px;
+    -moz-border-radius-bottomright: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+}
+
+#stylechooser h6 {
+    margin: 14px 0;
+    color: #626262;
+    font-size: 22px;
+    text-align: center;
+}
+
+#stylechooser hr {
+    margin: 5px 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    height: 5px;
+    background: transparent url(../images/hr-bg.png) no-repeat top center;
+}
+
+#stylechooser .mkSpace {
+    padding: 10px 5px 10px 10px;
+}
+
+.easyBox {
+    position: relative;
+}
+
+#stylechooser #vertical-title {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-topleft: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    -webkit-transform-origin: 0 50%;
+    -webkit-transform: rotate(-90deg) translate(-50%, 50%);
+    -moz-transform-origin: 0 50%;
+    -moz-transform: rotate(-90deg) translate(-50%, 50%);
+    -ms-transform-origin: 0 50%;
+    -ms-transform: rotate(-90deg) translate(-50%, 50%);
+    -o-transform-origin: 0 50%;
+    -o-transform: rotate(-90deg) translate(-50%, 50%);
+    transform-origin: 0 50%;
+    transform: rotate(-90deg) translate(-50%, 50%);
+    position: absolute !important;
+    top: 152px !important;
+    width: 153px;
+    left: 319px;
+    font-family: 'aleobold';
+    /* font-weight: 400; */
+    font-size: 18px;
+    color: #626262;
+    height: 47px;
+    line-height: 46px;
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.flavours-list a {
+    float: left;
+    margin: 0 4px 5px 0;
+}
+
+.grayscale a {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.grayscale a:hover,
+.grayscale a.active {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(0%);
+}
+
+#stylechooser.hiddenSwitcher {
+    left: -321px !important;
+}
+
+@media (max-width: 1670px) {
+    #stylechooser {
+        position: absolute !important;
+        width: 125px;
+    }
+    #stylechooser #vertical-title {
+        left: 123px;
+    }
+
+    #stylechooser.hiddenSwitcher {
+        left: -125px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #stylechooser {
+        /*display: none !important;*/
+    }
+}
